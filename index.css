@@ -3,34 +3,41 @@ body {
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
     min-width: 400px;
+    background-color:#fce1db;
 }
+p{
+    color:black;
 
+}
 input {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
-    border: 1px solid #5f9341;
+    border: 1px solid #482917;
     margin-bottom: 4px;
 }
 .green-text {
-     color: #5f9341;
+     color: #482917;
      
+}
+h1{
+    color:#482917;
 }
 .black {
     color: black;
     font-weight: bold;
 }
 button {
-    background: #5f9341;
-    color: white;
+    background: #bae6a8;
+    color: #482917;
     padding: 10px 20px;
-    border: 1px solid #5f9341;
+    border: 1px solid #bae6a8;
     font-weight: bold;
 }
 
 #delete-btn {
-    background: white;
-    color: #5f9341;
+    background:#bae6a8;
+    color: #482917;
 }
 
 ul {
@@ -43,9 +50,7 @@ li {
     margin-top: 5px;
 }
 
-a {
-    color: #5f9341;
-}
+
 
 h2 {
     text-align: right;
@@ -56,7 +61,20 @@ h2 {
     display:flex;
     align-items: center;
 }
-.delete-btn-list{
-    padding-left: 25px;
+
+a {
+text-decoration: none;
+font-size: 20px;
+font-weight: bold;
+
 }
+a:link{
+    color: #482917;
+}
+a:visited{
+    color: #482917;
+}
+/* .delete-btn-list{ }*/
+    
+
 

@@ -1,16 +1,27 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <head>
+        <meta charset= "UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <h1 class = "green-text">Bill Tracker</h1>
-        <p class = "green-text">Save the links to each bill you pay monthly. Then, when it is time to pay
-            the bills, they are all here ready for you! Use the <em><span class="black">checkboxes</span></em> to mark off bills that have been paid.
+        <h1>Bill Tracker</h1>
+        <p>Save the links to each bill you pay monthly. Then, when it is time to pay
+            the bills, they are all here ready for you! 
         </p>
+        <ol>
+            <li>Navigate to the tab of the bill you would like to save</li>
+            <li>Give the bill a name in the text box</li>
+            <li>Hit "Save Current Tab"</li>
+            <li>Repeat until all of your bills are saved below</li>
+            <li>When it is time to pay the bills, open this extension and access each bill by clicking the links below</li>
+            <li>Right now, the only way to delete items is to clear the list and start over. So proceed carefully &#128516 </li>
+        </ol>
         <input type="text" id="input-el">
         <!-- <button id="input-btn">Save Bill Name</button> -->
         <button id="tab-btn">Save Current Tab</button>
         <button id="delete-btn">Clear List</button>
+        <button id="open-all-btn">Open All</button>
         
         
         <ul id="ul-el">
