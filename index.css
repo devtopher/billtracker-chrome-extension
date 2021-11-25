@@ -52,3 +52,11 @@ h2 {
     margin-right: 350px;
 }
 
+.container {
+    display:flex;
+    align-items: center;
+}
+.delete-btn-list{
+    padding-left: 25px;
+}
+
