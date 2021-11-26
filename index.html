@@ -5,19 +5,22 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
+        
         <h1>Bill Tracker</h1>
-        <p>Save the links to each bill you pay monthly. Then, when it is time to pay
+        <p class="header">An open-source <a target='_blank' href="https://github.com/devtopher/billtracker-chrome-extension">project </a>by<a target='_blank' href="https://www.linkedin.com/in/chris-mccoy-4a415a224/"> Chris McCoy.</a></p>
+        
+        <!-- <p>Save the links to each bill you pay monthly. Then, when it is time to pay
             the bills, they are all here ready for you! 
-        </p>
+        </p> -->
         <ol>
             <li>Navigate to the tab of the bill you would like to save</li>
             <li>Give the bill a name in the text box</li>
             <li>Hit "Save Current Tab"</li>
             <li>Repeat until all of your bills are saved below</li>
-            <li>When it is time to pay the bills, open this extension and access each bill by clicking the links below</li>
-            <li>Right now, the only way to delete items is to clear the list and start over. So proceed carefully &#128516 </li>
+            <li>When it is time to pay the bills, open this extension and click "open all"</li>
+            
         </ol>
-        <input type="text" id="input-el">
+        <input placeholder="Name your bill and hit Enter to submit"type="text" autofocus id="input-el">
         <!-- <button id="input-btn">Save Bill Name</button> -->
         <button id="tab-btn">Save Current Tab</button>
         <button id="delete-btn">Clear List</button>

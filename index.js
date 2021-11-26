@@ -23,9 +23,17 @@ tabBtn.addEventListener("click", function(){
     myLinks.push(tabs[0].url)
     localStorage.setItem("myLinks", JSON.stringify(myLinks) )
     localStorage.setItem("billName", JSON.stringify(billName))
+    inputEl.value = ""
     render(myLinks)
     console.log(myLinks)
     })
+})
+
+inputEl.addEventListener("keyup", function(e){
+    if (e.code === 'Enter') {
+         tabBtn.click()
+         
+    }
 })
 //traverses array, pulling out each link name + link and putting it into ulEL
 function render(leads) {
@@ -34,22 +42,23 @@ function render(leads) {
     for (let i = 0; i < leads.length; i++) {
         listItems += `
        
-        <div class = "container">
+        
             <li>
-                <a target='_blank' href='${leads[i]}'>
+            <div class = "container">
+                <a class="list" target='_blank' href='${leads[i]}'>
                     ${billName[i]}
                 </a>
-                <button id="${i}">
+                <button class="delbtn" id="${i}">
                     Delete
                 </button>
+            </div>
             </li>
            
-            </div>
+           
             
         
         `
     }
-    //<button id = "id${i}" class= "delete-btn-list">Delete</button>INSERT ABOVE IF IT EVER WORKS
     ulEl.innerHTML = listItems
     for (let i=0; i<myLinks.length; i++){
         const deleteEl = document.getElementById(i)
