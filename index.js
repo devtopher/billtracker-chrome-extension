@@ -39,6 +39,9 @@ function render(leads) {
                 <a target='_blank' href='${leads[i]}'>
                     ${billName[i]}
                 </a>
+                <button id="${i}">
+                    Delete
+                </button>
             </li>
            
             </div>
@@ -48,7 +51,21 @@ function render(leads) {
     }
     //<button id = "id${i}" class= "delete-btn-list">Delete</button>INSERT ABOVE IF IT EVER WORKS
     ulEl.innerHTML = listItems
+    for (let i=0; i<myLinks.length; i++){
+        const deleteEl = document.getElementById(i)
+        deleteEl.addEventListener("click", function() {
+            myLinks.splice(i,1)
+            billName.splice(i,1)
+            render(myLinks)
+            localStorage.setItem("myLinks", JSON.stringify(myLinks) )
+            localStorage.setItem("billName", JSON.stringify(billName))
+        })
+    }
+    
 }
+
+
+
 
 // Clears local storage and empties arrays
 deleteBtn.addEventListener("click", function() {
