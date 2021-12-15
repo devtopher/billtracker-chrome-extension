@@ -53,7 +53,7 @@ button:focus {
 }
 
 .primary {
-    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 100ms ease-in-out, color 100ms ease-in-out;
 }
 
 .primary:hover {
@@ -103,7 +103,7 @@ a {
 .delbtn {
     border-color: #E74C3C;
     color: #E74C3C;
-    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 100ms ease-in-out, color 100ms ease-in-out;
     float: right;
     margin-left: auto;
     padding: 5px 10px;
