@@ -104,6 +104,9 @@ a {
     border-color: #E74C3C;
     color: #E74C3C;
     transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    float: right;
+    margin-left: auto;
+    padding: 5px 10px;
 }
 
 .delbtn:hover {
