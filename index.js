@@ -1,5 +1,7 @@
 let myLinks = []
 let billName = []
+let billElements = []
+
 const inputEl = document.getElementById("input-el")
 const inputBtn = document.getElementById("input-btn")
 const ulEl = document.getElementById("ul-el")
@@ -8,6 +10,7 @@ const leadsFromLocalStorage = JSON.parse( localStorage.getItem("myLinks") )
 const billNameFromLocalStorage = JSON.parse( localStorage.getItem("billName") )
 const tabBtn = document.getElementById("tab-btn")
 const openAllBtn = document.getElementById("open-all-btn")
+const searchEl = document.getElementById("search-el")
 
 //Displays links and names from local storage
 if (leadsFromLocalStorage && billNameFromLocalStorage) {
@@ -69,7 +72,8 @@ function render(leads) {
             localStorage.setItem("myLinks", JSON.stringify(myLinks) )
             localStorage.setItem("billName", JSON.stringify(billName))
         })
-    }
+    } 
+    // billElements = document.getElementsByClassName("container")
     
 }
 
@@ -91,3 +95,21 @@ openAllBtn.addEventListener("click", function() {
         url: myLinks[i]
     })
 })
+
+//Search 
+
+billElements = document.getElementsByClassName("container")
+searchEl.addEventListener("keyup", function(event){
+    let searchQuery = event.target.value.toLowerCase()
+    console.log(searchQuery)
+    for (let i = 0; i<billElements.length; i++){
+        const currentBillElement = billElements[i].children[0].textContent.toLowerCase();
+        
+        if (currentBillElement.includes(searchQuery)){
+            billElements[i].style.display = "flex"
+        }else {
+            billElements[i].style.display = "none"
+        }
+    }
+}
+)
