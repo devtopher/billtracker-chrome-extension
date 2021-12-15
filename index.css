@@ -32,10 +32,10 @@ h1{
 button {
     box-sizing: border-box;
     appearance: none;
-    background-color: transparent;
+    background-color: #3D9CB1;
     border: 2px solid #3D9CB1;
     border-radius: .6em;
-    color: #3D9CB1;
+    color: #FFF;
     cursor: pointer;
     font-size: .7rem;
     line-height: 1;
@@ -48,7 +48,7 @@ button {
 
 button:hover,
 button:focus {
-    color: #FFF;
+    color: #3D9CB1;
     outline: 0;
 }
 
@@ -57,7 +57,7 @@ button:focus {
 }
 
 .primary:hover {
-    box-shadow: 0 0 40px 40px #3D9CB1 inset;
+    box-shadow: 0 0 40px 40px #EFF0ED inset;
 }
 
 ul {
@@ -102,7 +102,8 @@ a {
 
 .delbtn {
     border-color: #E74C3C;
-    color: #E74C3C;
+    background-color: #E74C3C;
+    color: #FFF;
     transition: box-shadow 100ms ease-in-out, color 100ms ease-in-out;
     float: right;
     margin-left: auto;
@@ -110,7 +111,8 @@ a {
 }
 
 .delbtn:hover {
-    box-shadow: 0 0 40px 40px #E74C3C inset;
+    color: #E74C3C;
+    box-shadow: 0 0 40px 40px #EFF0ED inset;
 }
 
 .header{
