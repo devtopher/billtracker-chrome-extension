@@ -30,16 +30,34 @@ h1{
     font-weight: bold;
 }
 button {
-    background: #3d9cb1;
-    color: #0b2b44;
-    padding: 10px 20px;
-    border: 1px solid #3d9cb1;
-    font-weight: bold;
+    box-sizing: border-box;
+    appearance: none;
+    background-color: #3D9CB1;
+    border: 2px solid #3D9CB1;
+    border-radius: .6em;
+    color: #FFF;
+    cursor: pointer;
+    font-size: .7rem;
+    line-height: 1;
+    margin: 5px;
+    padding: 1em 1.7em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
 }
 
-#delete-btn {
-    background:#3d9cb1;
-    color: #0b2b44;
+button:hover,
+button:focus {
+    color: #3D9CB1;
+    outline: 0;
+}
+
+.primary {
+    transition: box-shadow 100ms ease-in-out, color 100ms ease-in-out;
+}
+
+.primary:hover {
+    box-shadow: 0 0 40px 40px #EFF0ED inset;
 }
 
 ul {
@@ -51,8 +69,6 @@ ul {
 li {
     margin-top: 5px;
 }
-
-
 
 h2 {
     text-align: right;
@@ -66,10 +82,9 @@ h2 {
 }
 
 .list {
-text-decoration: none;
-font-size: 20px;
-font-weight: bold;
-
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
 }
 .list:link{
     color: #3d9cb1;
@@ -77,6 +92,7 @@ font-weight: bold;
 .list:visited{
     color: #3d9cb1;
 }
+
 /* .delete-btn-list{ }*/
 a {
     text-decoration: none;
@@ -85,14 +101,20 @@ a {
 }
 
 .delbtn {
-    color: red;
-    background-color:white;
-    float:right;
-    margin-left:auto;
-    padding:5px 10px;
+    border-color: #E74C3C;
+    background-color: #E74C3C;
+    color: #FFF;
+    transition: box-shadow 100ms ease-in-out, color 100ms ease-in-out;
+    float: right;
+    margin-left: auto;
+    padding: 5px 10px;
 }
+
+.delbtn:hover {
+    color: #E74C3C;
+    box-shadow: 0 0 40px 40px #EFF0ED inset;
+}
+
 .header{
     text-align:center;
 }
-
-
