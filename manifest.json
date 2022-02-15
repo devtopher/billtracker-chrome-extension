@@ -1,7 +1,11 @@
 {
     "manifest_version": 3,
-    "version": "1.3",
+    "version": "0.1.3",
     "name": "Bill Tracker",
+    "icons": { "16": "icon16.png",
+        "48": "billtrackericon48.png",
+       "128": "billtrackericon.png" },
+    "description": "A chrome extension for keeping track of links to bills that you pay monthly",
     "action": {
         "default_popup": "index.html",
         "default_icon": "icon.png"
